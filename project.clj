@@ -3,7 +3,7 @@
   :url "http://marketwithgusto.com/mgnt/about/development.html"
   :license {:name "MIT License" :url "http://opensource.org/licenses/MIT"}  
   :min-lein-version "2.0.0"
-  :dependencies [[org.clojure/clojure "1.5.1"]  ; Lisp on the JVM  
+  :dependencies [[org.clojure/clojure "1.5.1"]
                  [dissolve-away "0.1.0"]
                  [ring/ring-jetty-adapter "1.2.0"]]
   :plugins [[lein-ring "0.8.2"]
@@ -12,9 +12,7 @@
             [lein-autoexpect "0.2.5"]]
   :main dissolve-away-host.handler    
   :ring {:handler dissolve-away-host.handler/app}
-  :repositories [["private" {:url "s3p://marketwithgusto.repo/releases/"
-                             :username :env
-                             :passphrase :env}]]
+  :repositories [["private" {:url "s3p://marketwithgusto.repo/releases/" :username :env :passphrase :env}]]
   :profiles  {:dev {:dependencies [[ring-mock "0.1.3"]
                                    [ring/ring-devel "1.1.8"]
                                    [clj-webdriver "0.6.0"]                 
