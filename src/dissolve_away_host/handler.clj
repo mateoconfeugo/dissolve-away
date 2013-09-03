@@ -6,5 +6,5 @@
 (defn start [port] (ring/run-jetty war-handler {:port port :join? false}))
 
 (defn -main []
-  (let [port (Integer/parseInt (or (System/getenv "MGNT_PORT") "8087"))]
+  (let [port (Integer/parseInt (or (System/getenv "DISSOLVE_AWAY_PORT") "8087"))]
     (start port)))
