@@ -5,4 +5,6 @@ pom.xml
 /targets/
 .lein-deps-sum
 ~*
+logs/
+target/
 
