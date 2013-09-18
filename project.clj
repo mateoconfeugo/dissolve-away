@@ -10,8 +10,10 @@
             [s3-wagon-private "1.1.2"]
             [lein-expectations "0.0.7"]
             [lein-autoexpect "0.2.5"]]
-  :main dissolve-away-host.handler    
-  :ring {:handler dissolve-away-host.handler/app}
+  :ring {:handler dissolve-away.handler/war-handler}
+  :main dissolve-away.server
+;;  :main dissolve-away-host.handler    
+;;  :ring {:handler dissolve-away-host.handler/app}
   :repositories [["private" {:url "s3p://marketwithgusto.repo/releases/" :username :env :passphrase :env}]]
   :profiles  {:dev {:dependencies [[ring-mock "0.1.3"]
                                    [ring/ring-devel "1.1.8"]
