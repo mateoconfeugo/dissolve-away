@@ -1,4 +1,4 @@
-(defproject dissolve-way-host "0.1.0"
+(defproject dissolve-way-host "0.1.1"
   :description "The hosting release wrapper"
   :url "http://marketwithgusto.com/mgnt/about/development.html"
   :license {:name "MIT License" :url "http://opensource.org/licenses/MIT"}  
